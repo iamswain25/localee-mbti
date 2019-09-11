@@ -1,0 +1,17 @@
+{
+  "name": "mbti",
+  "version": "1.0.0",
+  "description": "political survey",
+  "main": "index.js",
+  "author": "swain <iamswain@hotmail.com>",
+  "license": "GPL-A",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"yarn front\" \"yarn back\"",
+    "front": "cd frontend && yarn start",
+    "back": "cd functions && yarn serve"
+  }
+}
